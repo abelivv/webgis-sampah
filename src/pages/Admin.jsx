@@ -419,7 +419,7 @@ export default function Admin() {
 
   const logout = async () => {
     await supabase.auth.signOut();
-    window.location.replace("/login");
+    window.location.replace("/");
   };
 
   const filteredWarga = list.warga.filter(w => {
